@@ -16,6 +16,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
+import { toast } from "sonner"
  
 const formSchema = z.object({
   name: z.string().min(2).max(50),
@@ -42,6 +43,10 @@ export default function ContactForm() {
       .then(
         () => {
           console.log('SUCCESS!');
+          (document.getElementById("name") as HTMLInputElement).value = '';
+          (document.getElementById("email") as HTMLInputElement).value = '';
+          (document.getElementById("message") as HTMLInputElement).value = '';
+          toast("E-mail sent successfully.")
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -53,7 +58,7 @@ export default function ContactForm() {
 
     return (
       <Form {...form}>
-      <form ref={contactForm} onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 md:max-w-[50%] max-w-[90%] mx-auto">
+      <form id="contact-form" ref={contactForm} onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 md:max-w-[50%] max-w-[90%] mx-auto">
         <FormField
           control={form.control}
           name="name"
@@ -61,7 +66,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel className="text-bold">Name *</FormLabel>
               <FormControl>
-                <Input className="placeholder:text-gray-300 pt-2 pb-2 h-12" placeholder="Your Name ..." {...field} />
+                <Input id="name" className="placeholder:text-gray-300 pt-2 pb-2 h-12" placeholder="Your Name ..." {...field} />
               </FormControl>
               <FormMessage/>
             </FormItem>
@@ -74,7 +79,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel className="text-bold">Email *</FormLabel>
               <FormControl>
-                <Input className="placeholder:text-gray-300 pt-2 pb-2 h-12" placeholder="Your Email ..." {...field} />
+                <Input id="email" className="placeholder:text-gray-300 pt-2 pb-2 h-12" placeholder="Your Email ..." {...field} />
               </FormControl>
               <FormMessage/>
             </FormItem>
@@ -87,7 +92,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel className="text-bold">Message *</FormLabel>
               <FormControl>
-              <Textarea
+              <Textarea id="message"
                   className="placeholder:text-gray-300 resize-none pt-4 pb-2 h-24" placeholder="Write your message here ..."
                   {...field}
                 />

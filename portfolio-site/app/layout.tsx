@@ -5,6 +5,7 @@ import NavBar from "@/components/ui/navbar";
 import NavBarMobile from "@/components/ui/navbar-mobile";
 import Footer from "@/components/ui/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Toaster } from "@/components/ui/sonner"
 
 console.log(SpeedInsights)
 
@@ -40,6 +41,7 @@ export default function RootLayout({
 
         <Footer></Footer>
       </body>
+      <Toaster className="z-40 bg-white"/>
     </html>
   );
 }
