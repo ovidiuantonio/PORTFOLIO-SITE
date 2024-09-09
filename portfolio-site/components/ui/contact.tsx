@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -37,7 +36,7 @@ export default function ContactForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     emailjs
-      .sendForm('service_f5sb7e4', 'template_yixx629', contactForm.current, {
+      .sendForm('service_f5sb7e4', 'template_yixx629', contactForm.current == null ? " " : contactForm.current, {
         publicKey: 'O-4Lp44ts_YAF5vz2',
       })
       .then(

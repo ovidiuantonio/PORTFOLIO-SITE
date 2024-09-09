@@ -4,16 +4,10 @@ import React from "react";
 import Image from "next/image";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 import Link from 'next/link'
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -23,9 +17,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 
