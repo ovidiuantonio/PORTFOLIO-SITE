@@ -4,6 +4,9 @@ import "./globals.css";
 import NavBar from "@/components/ui/navbar";
 import NavBarMobile from "@/components/ui/navbar-mobile";
 import Footer from "@/components/ui/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
+console.log(SpeedInsights)
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
