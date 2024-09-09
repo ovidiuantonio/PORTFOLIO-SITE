@@ -48,8 +48,8 @@ export default function NavBarMobile() {
         <NavigationMenuList>
         <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
           <SheetTrigger><FontAwesomeIcon icon={faBars} className="px-12" /></SheetTrigger>
-          <SheetContent side={"bottom"} className="min-h-[100vh] bg-white flex-col text-xl">
-            <NavigationMenuList className="flex-col grow h-[80vh] text-xl flex-1 min-w-[10rem]">
+          <SheetContent side={"bottom"} className="min-h-[100vh] bg-white flex-col text-xl text-center">
+            <NavigationMenuList className="flex-col grow h-[75vh] text-xl flex-1 min-w-[10rem]">
               <NavigationMenuItem className="p-3 hover:italic">
                   <Link href="/about" className={`font-body ${pathname === "/about" ? 'font-bold' : 'font-light'}`} onClick={() => setSheetOpen(false)}>ABOUT</Link>
                 </NavigationMenuItem>
