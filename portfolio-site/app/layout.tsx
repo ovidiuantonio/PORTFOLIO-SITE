@@ -5,9 +5,10 @@ import NavBar from "@/components/ui/navbar";
 import NavBarMobile from "@/components/ui/navbar-mobile";
 import Footer from "@/components/ui/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 import { Toaster } from "@/components/ui/sonner"
 
-console.log(SpeedInsights)
+console.log(SpeedInsights, Analytics)
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
