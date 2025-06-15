@@ -4,7 +4,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold uppercase font-body-['Poppins'] text-center pt-16">Soul Remesher</h1>
       <p className="text-lg font-thin font-body-['Poppins'] text-center pt-6 pb-24 tracking-wide text-gray-400">A 3D artist who loves creating meaningful and fun things.</p>
 
-      <div className="no-scrollbar projects grid grid-cols-1 md:grid-cols-3 gap-3 min-h-[30rem] align-center justify-start">
+      <div className="projects grid grid-cols-1 md:grid-cols-3 gap-3 min-h-[30rem] align-center justify-start">
         <iframe className="w-[100%] md:min-h-[30rem] min-h-[20rem]" src="https://www.behance.net/embed/project/226768985?ilo0=1" allowFullScreen loading="lazy" allow="clipboard-write"></iframe>
         <iframe className="w-[100%] md:min-h-[30rem] min-h-[20rem]" src="https://www.behance.net/embed/project/216179409?ilo0=1" allowFullScreen loading="lazy" allow="clipboard-write"></iframe>
         <iframe className="w-[100%] md:min-h-[30rem] min-h-[20rem]" src="https://www.behance.net/embed/project/205240437?ilo0=1" allowFullScreen loading="lazy" allow="clipboard-write"></iframe>
