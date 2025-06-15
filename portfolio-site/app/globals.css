@@ -9,10 +9,6 @@
   --foreground: #171717;
 }
 
-iframe html {
-  overflow: hidden;
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
