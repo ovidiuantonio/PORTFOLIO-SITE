@@ -9,7 +9,7 @@
   --foreground: #171717;
 }
 
-iframe > html {
+iframe html {
   overflow: hidden;
 }
 
