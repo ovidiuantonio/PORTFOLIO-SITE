@@ -48,15 +48,6 @@ export default function Home() {
 
         <iframe 
           className="iframe w-full md:min-h-[30rem] min-h-[20rem] border-0"
-          src="https://www.behance.net/embed/project/203708199?ilo0=1" 
-          allowFullScreen 
-          loading="lazy" 
-          allow="clipboard-write"
-          scrolling="no">
-        </iframe>
-
-        <iframe 
-          className="iframe w-full md:min-h-[30rem] min-h-[20rem] border-0"
           src="https://www.behance.net/embed/project/200664459?ilo0=1" 
           allowFullScreen 
           loading="lazy" 
