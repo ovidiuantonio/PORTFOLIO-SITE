@@ -12,6 +12,15 @@ export default function Home() {
         {/* The className is simplified and scrolling="no" is added */}
         <iframe 
           className="iframe w-full md:min-h-[30rem] min-h-[20rem] border-0" 
+          src="https://www.behance.net/embed/project/243751467?ilo0=1" 
+          allowFullScreen 
+          loading="lazy" 
+          allow="clipboard-write"
+          scrolling="no">
+        </iframe>
+        
+        <iframe 
+          className="iframe w-full md:min-h-[30rem] min-h-[20rem] border-0" 
           src="https://www.behance.net/embed/project/233902301?ilo0=1" 
           allowFullScreen 
           loading="lazy" 
